@@ -21,11 +21,13 @@ img {
 
 main.container {
     padding: 20px 0px 0px 30px;
+
 }
 
 .cost {
     margin: 30px 0px 0px;
     color: hsl(93, 12%, 44%);
+    font-size: 45px;
 }
 
 .cut {
@@ -40,13 +42,13 @@ button {
     padding: 10px 40px;
     text-align: center;
     display: inline-block;
-    width: 200px;
+    width: 210px;
     height: 45px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
-    margin-left: 20px;
+    margin: 10px 0px 0px 65px;
 }
 
 button:hover {
@@ -58,20 +60,111 @@ h3 {
     font-weight: 500;
     margin-bottom: 0px;
     color: hsl(228, 12%, 48%);
+    font-size: 20px;
+    letter-spacing: 5px;
 }
 
 p {
-    font-size: 14px;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     color: hsl(228, 12%, 48%);
 }
 
 h1 {
     font-family: 'Fraunces', serif;
-    line-height: 30px;
+    line-height: 50px;
     color: hsl(212, 21%, 14%);
+    font-size: 50px;
 }
 
 img.cart {
-    width: 16%;
+    width: 15%;
+}
+
+/* in Resolution 1440 x 720 */
+@media only screen and (max-width: 1440px) {
+    h1 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    h3 {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .cost {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    button {
+        margin: 0px 0px 0px 18px;
+        width: 200px;
+    }
+}
+
+/* in Resolution 375 x 600*/
+@media only screen and (max-width: 375px) {
+    img {
+        content: url(images/image-product-mobile.jpg);
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    main {
+        width: 300px;
+        height: 550px;
+        overflow: none;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img.cart {
+        content: url(images/cart.png);
+        width: 20px;
+    }
+
+    main.container {
+        padding: 0px 10px 5px 20px;
+        max-width: 270px;
+        height: auto;
+        clear: none;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 25px;
+        line-height: 25px;
+        margin-bottom: 0px;
+        margin-top: 15px;
+    }
+
+    p {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    .cost {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    button {
+        width: 230px;
+        font-size: 15px;
+        padding: 10px auto 5px;
+        margin: 20px auto 0px 15px;
+    }
 }
