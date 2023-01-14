@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: [My Github.](https://github.com/abriadm/Product-Preview.git)
+- Live Site URL: [Preview.](https://abriadm.github.io/Product-Preview/)
 
 ## My process
 
